@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+
+
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    align-items: center;
+    display: flex;
+    background: linear-gradient(to right, #a517ba, #5f1782);
+    height: 50px;
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 1600px;
+    margin: auto;
+}
+.logo {
+    display: flex;
+    align-items: center; /* Center the logo vertically */
+}
+.logo img{
+    height: 40px;
+    margin-right: 650px; /* Add margin to separate the logo from other content */
+}
+
+/* Move the navbar to the left side */
+.navbar {
+    justify-content: flex-start;
+}
+.menu ul{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.menu ul li{
+    padding: 0 10px;
+    text-align: right;
+    list-style: none;
+    margin-right: 15px;
+}
+.menu ul li a{
+    color: #fff !important;
+    font-weight: 600;
+    float: right;
+    text-decoration: none;
+}
+
+
+#tutorials{
+    background: #f8f9fa;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.container{
+    width: 80%;
+    margin: 80px auto;
+}
+.title::before{
+    content: '';
+    background: #7b1798;
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+}
+.title::after{
+    content: '';
+    background: #7b1798;
+    height: 10px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    display: block;
+    transform: translateY(8px);
+}
+.container h1{
+    padding: 60px 0;
+    font-size: 40px;
+    text-align: center;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.col{
+    flex-basis: 50%;
+    min-width: 250px;
+}
+.feature-img{
+    width: 83%;
+    margin: 100px;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.small-img-row{
+    display: flex;
+    background: linear-gradient(to right, #a517ba,#5f1782);
+    margin: 20px 0;
+    align-items: center;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 85%;
+    height: 50px;
+}
+.small-img{
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.small-img img{
+    width: 100px;
+}
+.small-img-row p{
+    margin-left: 20px;
+    color: black;
+    line-height: 22px;
+    font-size: 15px;
+}
+.play-btn{
+    width: 60px;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+.small-img .play-btn{
+    width: 35px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+.video-player{
+    width: 80%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+.video:focus{
+    outline: none;
+}
+.close-btn{
+    position: absolute;
+    top: 10px;
+    left: 930px;
+    width:30px;
+    cursor: pointer;
+}

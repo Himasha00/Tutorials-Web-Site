@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <title>playlist</title>
+        <link rel="stylesheet" href="tut.css">
+    </head>
+    <body>
+      <section id="nav-bar">
+        <div class="navbar">
+          <div class="icon">
+              <h2 class="logo"><img src="images/InfoTech-01.png"></h2>
+          </div>
+          <div class="menu">
+              <ul>
+                  <li><a href="index.html"> HOME</a></li>
+                  <li><a href="index.html">SERVICE</a></li>
+                  <li><a href="#top">TUTORIALS</a></li>
+                  <li><a href="index.html">TESTIMONIALS</a></li>
+                  <li><a href="index.html">ABOUT US</a></li>
+                  <li><a href="index.html">CONTACT</a></li>
+              </ul>
+          </div>
+        </div>
+      </section>
+
+
+
+        <section id="tutorials">
+            <div class="container">
+              <h1 class="title">PLAYLIST</h1>
+              <div class="row">
+                <h3>Web Development Tutorials</h3>
+                  <div class="feature-img">
+                    <img src="images/images (2).jfif" width="300px">
+                  </div>
+                  <div class="small-img-row">
+                    <div class="small-img">
+                      <img src="images/images (2).jfif">
+                      <img src="images/images.png" class="play-btn" onclick="playVideo('tutorials/A')">
+                    </div>
+                    <p>Part-01</p>
+                  </div>
+                
+                  <div class="small-img-row">
+                    <div class="small-img">
+                      <img src="images/images (2).jfif">
+                      <img src="images/images.png" class="play-btn" onclick="playVideo('tutorials/EP.3.360p')">
+                    </div>
+                    <p>Part-02</p>
+                  </div>
+                
+                  <div class="small-img-row">
+                    <div class="small-img">
+                      <img src="images/images (2).jfif">
+                      <img src="images/images.png" class="play-btn" onclick="playVideo('tutorials/EP.7.360p')">
+                    </div>
+                    <p>Part-03</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="container">
+              <div class="row">
+                <h3>Project Management Tutorials</h3>
+                  <div class="feature-img">
+                    <img src="images/creative-project-management-icon-background-png_263988.jpg" width="300px">
+                  </div>
+                  <div class="small-img-row">
+                    <div class="small-img">
+                      <img src="images/creative-project-management-icon-background-png_263988.jpg">
+                      <img src="images/images.png" class="play-btn" onclick="playVideo('tutorials/EP.2.360p')">
+                    </div>
+                    <p>Part-01</p>
+                  </div>
+                
+                  <div class="small-img-row">
+                    <div class="small-img">
+                      <img src="images/creative-project-management-icon-background-png_263988.jpg">
+                      <img src="images/images.png" class="play-btn" onclick="playVideo('tutorials/EP.3.360p')">
+                    </div>
+                    <p>Part-02</p>
+                  </div>
+                
+                  <div class="small-img-row">
+                    <div class="small-img">
+                      <img src="images/creative-project-management-icon-background-png_263988.jpg">
+                      <img src="images/images.png" class="play-btn" onclick="playVideo('tutorials/EP.7.360p')">
+                    </div>
+                    <p>Part-03</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+              
+  
+  
+            <div class="video-player" id="videoPlayer">
+              <video width="80%" controls autoplay id="myVideo">
+                <source src="tutorials/EP.1.v0.1639519982.360p.mp4" type="video/mp4">
+              </video>
+             
+              <img src="images/close1351.jpg" class="close-btn" onclick="stopVideo()">
+            </div>
+
+
+            <script>
+              var videoPlayer = document.getElementById("videoPlayer");
+              var myVideo = document.getElementById("myVideo");
+  
+              function stopVideo(){
+  
+                videoPlayer.style.display="none";
+              }
+
+              function playVideo(file){
+                myVideo.src=file;
+                videoPlayer.style.display = "block";
+              }
+            </script>
+          </section>
+  
+    </body>
+</html>
